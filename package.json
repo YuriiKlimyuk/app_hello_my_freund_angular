@@ -1,10 +1,13 @@
 {
   "name": "app-hello-my-freund-angular",
   "version": "0.0.0",
+  "homepage": ".",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d dist/app_hello_my_freund_angular/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:app_hello_my_freund_angular": "node dist/app_hello_my_freund_angular/server/server.mjs"
